@@ -2,6 +2,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import CreateQuestionView from '../../feature/questions/pages/CreateQuestionView';
 import QuestionListView from '../../feature/questions/pages/QuestionListView';
 import RegistrationWizardView from '../../feature/user/pages/RegistrationWizardView';
+import CertificateValidatorView from '../../feature/certificate/page/CertificateValidatorView';
 
 export const navigationWrapper = createBrowserRouter([
   {
@@ -15,5 +16,9 @@ export const navigationWrapper = createBrowserRouter([
   {
     path: '/register',
     element: <RegistrationWizardView />,
+  },
+  {
+    path: '/certificates/validate',
+    element: <CertificateValidatorView />,
   }
 ]);

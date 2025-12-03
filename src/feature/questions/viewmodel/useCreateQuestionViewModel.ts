@@ -82,7 +82,10 @@ export const useCreateQuestionViewModel = () => {
                 alert("¡Pregunta guardada!");
                 navigate('/');
             } else {
-                alert("Error al guardar");
+
+                const errorData = await response.json();
+                console.log("❌ ERRORES DE VALIDACIÓN:", errorData);
+                alert(`Error al guardar: ${JSON.stringify(errorData)}`); 
             }
         } catch (error) {
             console.error(error);

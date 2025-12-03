@@ -17,6 +17,9 @@ const QuestionListView = () => {
                 <Link to="/register">
                     <button>Registro de Usuarios</button>
                 </Link>
+                <Link to="/certificates/validate">
+                    <button style={{ backgroundColor: '#722ed1', color: 'white' }}>Validar Certificado</button>
+                </Link>
             </div>
 
             <table border={1} cellPadding={10} style={{ width: '100%', borderCollapse: 'collapse' }}>
